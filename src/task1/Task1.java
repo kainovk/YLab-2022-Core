@@ -25,7 +25,7 @@ public class Task1 {
                 count++;
             }
         }
-        avg = count != 0 ? avg / count : 1;
+        avg = count != 0 ? avg / count : 0;
         System.out.println("Минимум: " + min);
         System.out.println("Максимум: " + max);
         System.out.println("Среднее: " + avg);
