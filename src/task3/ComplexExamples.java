@@ -140,6 +140,9 @@ public class ComplexExamples {
     }
 
     private static int[] twoSum(int[] nums, int target) {
+        if (nums == null) {
+            throw new IllegalStateException("cannot be null");
+        }
         List<Integer> list = new ArrayList<>();
         for (int num : nums) {
             int complement = target - num;
