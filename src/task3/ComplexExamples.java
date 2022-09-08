@@ -141,7 +141,8 @@ public class ComplexExamples {
 
     private static int[] twoSum(int[] nums, int target) {
         if (nums == null) {
-            throw new IllegalStateException("cannot be null");
+            System.err.println("cannot be null");
+            return new int[0];
         }
         List<Integer> list = new ArrayList<>();
         for (int num : nums) {
